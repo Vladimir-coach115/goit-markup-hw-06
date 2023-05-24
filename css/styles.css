@@ -618,10 +618,12 @@ flex-direction: column;
 .modal-form-input  {
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
+  background-color: transparent;
   padding-left: 38px;
   color: var(--primary-text-color);
+  outline: transparent;
   transition: border-color var(--transition-duration-and-func);
 }
 .modal-form-input:focus {
@@ -649,19 +651,23 @@ flex-direction: column;
   resize: none;
   width: 100%;
   height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   padding: 8px 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
   transition: border-color var(--transition-duration-and-func);
 }
 .modal-form-message::placeholder {
   /* text-transform: uppercase; */
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 0.083;
-  letter-spacing: 0.04em;
-  padding-top: 8px;
-  color: rgba(46, 47, 66, 0.4);
+  /* font-weight: 400;
+  
+  padding-top: 8px; */
+  
 }
 .modal-form-message:focus {
   outline: none;
@@ -669,36 +675,38 @@ flex-direction: column;
 }
           /* checkbox */
 
+.modal-checkbox  {
+  margin-bottom: 24px;
+}
 /* label */
 .modal-form-check-desk {
-  display: flex;
-  align-items: center;
-  font-weight: 400;
+  /* display: flex; */
+  
+  /* font-weight: 400; */
   font-size: 12px;
-  line-height: 0.083;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8E8F99;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 /* span */
 .modal-form-face-span {
-  display: block; 
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  cursor: pointer;
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  /* cursor: pointer;
   margin-right: 8px;
   background-color: 
-    var(--color-teamcard);
+    var(--color-teamcard); */
 }
 
 .form-check-icon {
-  display: flex; 
-  width: 10px;
-  height: 8px;
-  padding: ;
-  fill: green;
+  fill: #31d0aa;
   transition: fill var(--transition-duration-and-func);
 }
 .modal-form-check:focus ~ .form-check-icon {
@@ -706,8 +714,12 @@ flex-direction: column;
 }
 
 
+
+
 /* Кнопка */
 .modal-form-submit {
+  display: block; 
+  min-width: 169px;
   margin-right: auto;
   margin-left: auto;
   display: block;
