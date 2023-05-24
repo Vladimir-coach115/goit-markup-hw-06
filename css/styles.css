@@ -629,7 +629,7 @@ height: 24px;
 }
         
           /* Иконка */
-
+/* svg */
 .modal-form-icon {
   position: absolute;
   top: 50%;
@@ -670,6 +670,7 @@ height: 24px;
 }
           /* checkbox */
 
+/* label */
 .modal-form-check-desk {
   display: flex;
   align-items: center;
@@ -680,32 +681,35 @@ height: 24px;
   color: #8E8F99;
   margin-bottom: 20px;
 }
-
-.modal-form-face-checkbox {
+/* span */
+.modal-form-face-span {
   display: block; 
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   cursor: pointer;
+  margin-right: 8px;
   background-color: 
     var(--color-teamcard);
-  transition: border-color var(--transition-duration-and-func);
-  margin-right: 8px;
 }
-.modal-form-check-desk:focus {
-  background-color: var(--accent-color);
-}
+/* svg */
 .form-check-icon {
-  display: flex;
-  justify-content: center;
-  /* opacity: 0; */
-  /* width: 10px;
-  height: 8px; */
+  display: flex; 
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 10px;
+  height: 8px;
+  /* color: green; */
+  transition: fill var(--transition-duration-and-func);
+}
+.modal-form-check:focus + .form-check-icon {
+  fill: var(--accent-color);
 }
 
 
 
+/* Кнопка */
 .modal-form-submit {
   margin-right: auto;
   margin-left: auto;
