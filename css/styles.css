@@ -580,7 +580,7 @@ background-color: var(--accent-color);
             /* Modal Form */
 
 .modal-form-text  {
-font-family: 'Roboto';
+/* font-family: 'Roboto'; */
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -588,9 +588,10 @@ text-align: center;
 letter-spacing: 0.02em;
 color: var(--primary-text-color);
 margin-bottom: 16px;
-width: 360px;
-height: 24px;
+/* width: 360px;
+height: 24px; */
 }
+
 .modal-form{
 display: flex;
 flex-direction: column;
@@ -600,9 +601,6 @@ flex-direction: column;
 }
      /* Name */
      
-/* .modal-form-field {
-  margin-bottom: 8px;
-} */
 .modal-form-field {
   font-weight: 400;
   font-size: 12px;
