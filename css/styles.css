@@ -579,10 +579,6 @@ background-color: var(--accent-color);
 
             /* Modal Form */
 
-.modal-form{
-display: flex;
-flex-direction: column;
-}
 .modal-form-text  {
 font-family: 'Roboto';
 font-weight: 500;
@@ -595,17 +591,24 @@ margin-bottom: 16px;
 width: 360px;
 height: 24px;
 }
-     /* Name */
-     
-.modal-form-field {
+.modal-form{
+display: flex;
+flex-direction: column;
+}
+.modal-form-div {
   margin-bottom: 8px;
 }
-.modal-form-input-desc {
-  display: block;
+     /* Name */
+     
+/* .modal-form-field {
+  margin-bottom: 8px;
+} */
+.modal-form-field {
   font-weight: 400;
   font-size: 12px;
-  line-height: 0.083;
-  letter-spacing: 0.01em;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  display: block;
   margin-bottom: 4px;
   color: #8E8F99;
 }
@@ -628,8 +631,6 @@ height: 24px;
   border-color: var(--brand-color);
 }
         
-          /* Иконка */
-/* svg */
 .modal-form-icon {
   position: absolute;
   top: 50%;
@@ -693,20 +694,18 @@ height: 24px;
   background-color: 
     var(--color-teamcard);
 }
-/* svg */
+
 .form-check-icon {
   display: flex; 
-  /* justify-content: center; */
-  /* align-items: center; */
   width: 10px;
   height: 8px;
-  /* color: green; */
+  padding: ;
+  fill: green;
   transition: fill var(--transition-duration-and-func);
 }
-.modal-form-check:focus + .form-check-icon {
+.modal-form-check:focus ~ .form-check-icon {
   fill: var(--accent-color);
 }
-
 
 
 /* Кнопка */
