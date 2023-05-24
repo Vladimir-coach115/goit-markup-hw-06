@@ -646,7 +646,9 @@ flex-direction: column;
   fill: var(--brand-color);
 }
             /* textarea */
-
+.modal-form-comment {
+  margin-bottom: 16px;
+}
 .modal-form-message {
   resize: none;
   width: 100%;
@@ -680,41 +682,37 @@ flex-direction: column;
 }
 /* label */
 .modal-form-check-desk {
-  /* display: flex; */
-  
-  /* font-weight: 400; */
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8E8F99;
-  /* margin-bottom: 20px; */
+  
 }
 /* span */
 .modal-form-face-span {
   width: 16px;
   height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid var(--primary-text-color);
   border-radius: 2px;
   display: inline-flex; 
   align-items: center;
   justify-content: center;
   fill: transparent;
-  /* cursor: pointer;
-  margin-right: 8px;
-  background-color: 
-    var(--color-teamcard); */
+  
 }
-
-.form-check-icon {
-  fill: #31d0aa;
-  transition: fill var(--transition-duration-and-func);
-}
-.modal-form-check:focus ~ .form-check-icon {
-  fill: var(--accent-color);
+.modal-form-check:focuc ~ .modal-form-face-span {
+  background-color: var(--accent-color);
+  border: none;
+  fill: var(--primary-white-color);
+  border-color: var(--accent-color);
 }
 
 
 
+
+.privacy-policy {
+  color: var(--brand-color);
+}
 
 /* Кнопка */
 .modal-form-submit {
