@@ -497,18 +497,64 @@ background-color: var(--accent-color);
 .networks {
   fill: var(--color-teamcard);
 }
-
 /* 3-й елемент подвала */
 
-.contact-form {
+.footer-contact-form {
   margin-left: 120px;
 }
-.footer-form-input {
 
-  /* color: var(--color-teamcard); */
+.footer-form-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-white-color);
 }
-
-
+.contact-form {
+  display: flex;
+}
+.cont-form-field {
+  /* margin-right: 24px; */
+}
+.footer-form-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-white-color);
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.footer-form-input::placeholder  {
+  color: var(--primary-white-color);
+}
+  
+.contact-form-btn {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  cursor: pointer;
+  background: var(--brand-color);
+  border-radius: 4px;
+  margin-left: 24px;
+  border: none;
+}
+.contact-btn-telegam {
+  margin-left: 16px; 
+}
 
 
 
@@ -664,13 +710,7 @@ flex-direction: column;
   outline: transparent;
   transition: border-color var(--transition-duration-and-func);
 }
-.modal-form-message::placeholder {
-  /* text-transform: uppercase; */
-  /* font-weight: 400;
-  
-  padding-top: 8px; */
-  
-}
+
 .modal-form-message:focus {
   outline: none;
   border-color: var(--brand-color);
