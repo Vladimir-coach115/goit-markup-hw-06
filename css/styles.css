@@ -515,7 +515,7 @@ background-color: var(--accent-color);
   display: flex;
 }
 .cont-form-field {
-  /* margin-right: 24px; */
+  margin-right: 24px;
 }
 .footer-form-input {
   width: 264px;
@@ -549,10 +549,10 @@ background-color: var(--accent-color);
   cursor: pointer;
   background: var(--brand-color);
   border-radius: 4px;
-  margin-left: 24px;
   border: none;
   fill: var(--primary-white-color);
 }
+
 .contact-btn-telegam {
   margin-left: 16px; 
 }
