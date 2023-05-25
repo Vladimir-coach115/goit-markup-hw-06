@@ -456,7 +456,8 @@ background-color: var(--accent-color);
   color: var(--color-teamcard);
   background-color: var(--primary-text-color);
 }
-/* Подвал - footer-social */
+
+/* 2-й елем подвала - footer-social */
 
 .footer-social {
   margin-left: 120px;
@@ -540,7 +541,7 @@ background-color: var(--accent-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto';
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -556,9 +557,6 @@ background-color: var(--accent-color);
 .contact-btn-telegam {
   margin-left: 16px; 
 }
-
-
-
 
             /* Modal Window */
 .backdrop {
@@ -624,10 +622,9 @@ background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
 
-            /* Modal Form */
+           /* Modal Form */
 
 .modal-form-text  {
-/* font-family: 'Roboto'; */
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -635,8 +632,6 @@ text-align: center;
 letter-spacing: 0.02em;
 color: var(--primary-text-color);
 margin-bottom: 16px;
-/* width: 360px;
-height: 24px; */
 }
 
 .modal-form{
@@ -750,7 +745,8 @@ flex-direction: column;
   color: var(--brand-color);
 }
 
-/* Кнопка */
+        /* Кнопка */
+
 .modal-form-submit {
   display: block; 
   min-width: 169px;
@@ -778,7 +774,6 @@ flex-direction: column;
 .modal-form-submit:focus {
   background-color: var(--accent-color);
 }
-
 
 /* Portfolio */
 
@@ -850,7 +845,6 @@ row-gap: 48px;
 .pic-link {
   display: block;
   transition: box-shadow var(--transition-duration-and-func);
-  
 }
 .pic-link:hover,
 .pic-link:focus {
@@ -877,7 +871,6 @@ row-gap: 48px;
   letter-spacing: 0.02em;
   padding: 40px 32px;
   background-color: var(--brand-color);
-  
 }
 .pic-link:hover .overlay,
 .pic-link:focus .overlay {
